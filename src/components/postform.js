@@ -45,7 +45,7 @@ function PostForm() {
     const handleDelete = (deleteID) => {
         axios.delete(`https://jsonplaceholder.typicode.com/posts/${deleteID}`)
         .then(res => {
-           console.log('DELETD RECORD::::', res)
+           console.log('DELETD RECORD', res)
 
         })
         .catch(err => console.log(err))
@@ -64,7 +64,7 @@ function PostForm() {
     <div className="container">
     <div className="row">
         <div className="col-md-8 offset-md-2 mt-2">
-            <h4> Lets Learn CRUD API Integration in React js using axios</h4>
+            <h4>API Integration in React js </h4>
             <form onSubmit={handleSubmit}>
                 <div className="form-group">
                     <label htmlFor="userId">User Id</label>
